@@ -1,0 +1,42 @@
+# Combined requirements file for Render deployment
+# This file combines base.txt and rag.txt for easier deployment
+
+# Core FastAPI and server
+fastapi
+uvicorn[standard]
+
+# Database
+sqlalchemy
+psycopg2-binary
+
+# Authentication
+python-jose[cryptography]
+python-multipart
+passlib[bcrypt]
+
+# Environment variables
+python-dotenv
+
+# HTTP client
+httpx
+
+# Image processing
+Pillow
+
+# RAG (Retrieval Augmented Generation) Dependencies
+langchain
+langchain-community
+langchain-openai
+faiss-cpu
+pypdf
+python-docx
+openpyxl
+sentence-transformers
+langdetect
+
+# Web Search
+duckduckgo-search
+
+# OpenAI for embeddings
+openai
+

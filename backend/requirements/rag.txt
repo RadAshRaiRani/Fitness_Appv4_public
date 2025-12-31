@@ -1,0 +1,27 @@
+# RAG (Retrieval Augmented Generation) Dependencies
+
+# LangChain for RAG workflows
+langchain
+langchain-community
+langchain-openai
+
+# Lightweight Vector Database (alternative to ChromaDB)
+faiss-cpu
+
+# Document Processing
+pypdf
+python-docx
+openpyxl
+
+# Embeddings
+sentence-transformers
+
+# Text Processing
+langdetect
+
+# Web Search
+duckduckgo-search
+
+# OpenAI for embeddings (optional - can use sentence-transformers for free local use)
+openai
+

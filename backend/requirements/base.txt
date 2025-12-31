@@ -1,0 +1,24 @@
+# Core FastAPI and server
+fastapi
+uvicorn[standard]
+
+# Database
+sqlalchemy
+psycopg2-binary
+
+# Authentication
+python-jose[cryptography]
+python-multipart
+passlib[bcrypt]
+
+# Environment variables
+python-dotenv
+
+# HTTP client
+httpx
+
+# Image processing
+Pillow
+
+# Note: Pydantic is a dependency of FastAPI and will be installed automatically
+

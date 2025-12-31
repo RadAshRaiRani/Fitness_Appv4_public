@@ -1,0 +1,136 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Node.js / Frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.npm
+.node_repl_history
+*.log
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# React
+coverage/
+*.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Exclude Docker and Vercel files
+Dockerfile
+docker-compose.yml
+docker-compose.yaml
+.dockerignore
+frontend/vercel.json
+backend/Dockerfile
+
+# Exclude all markdown files first, then allow specific ones
+*.md
+!README.md
+!backend/README.md
+!frontend/README.md
+!backend/data/recommendations/*.md
+
+# Exclude all text files except those in vectors
+*.txt
+!backend/data/diet_vectors/*.txt
+!backend/data/exercise_vectors/*.txt
+
+# Exclude HTML files
+*.html
+
+# RAG vector data - keep the vector text files (needed for application)
+# Only ignore FAISS index files (can be regenerated)
+backend/data/diet_vectors/*.faiss
+backend/data/exercise_vectors/*.faiss
+
+# Keep folder structure and vector text files
+!backend/data/diet_vectors/
+!backend/data/exercise_vectors/
+
+# Document uploads - keep PDFs (needed for application)
+# Keep folder structure and document files
+!backend/data/diet_documents/
+!backend/data/exercise_documents/
+!backend/data/diet_documents/*.pdf
+!backend/data/exercise_documents/*.pdf
+
+# Recommendations folder - keep all recommendation markdown files
+!backend/data/recommendations/
+!backend/data/recommendations/*.md
+
+# Uploads
+uploads/
+temp/
+backend/data/uploads/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Allow frontend/lib folder (contains API configuration)
+!frontend/lib/
+!frontend/lib/**
+# Allow app/lib folder (contains API configuration)
+!frontend/app/lib/
+!frontend/app/lib/**
